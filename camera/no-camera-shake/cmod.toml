@@ -1,0 +1,175 @@
+# No Camera Shake — Removes all camera shake effects
+# Zeros out every _shakeRadius value in the camera effect presets.
+# Great for players who find camera shake distracting or nauseating.
+
+[mod]
+name = "no-camera-shake"
+version = "1.0.0"
+title = "No Camera Shake"
+description = "Removes all camera shake effects by zeroing shake radius values. Affects combat hits, environmental effects, and ability impacts."
+authors = ["CrimsonForge"]
+license = "MIT"
+
+[target]
+game = "crimson-desert"
+game_version = "1.02.00"
+
+[[patch]]
+file = "gamedata/cameraeffectpreset.xml"
+checksum = "4b7b87b65f6a48f145a7d14fe742ccb44d78594344d0dc3afb6b808b5ba22a74"
+
+[[patch.change]]
+offset = 224
+original = "5f7368616b655261646975733d22302e30323030303022"
+patched = "5f7368616b655261646975733d22302e30303030303022"
+label = "Shake 0.020000 -> 0.000000"
+
+[[patch.change]]
+offset = 517
+original = "5f7368616b655261646975733d22302e313030303022"
+patched = "5f7368616b655261646975733d22302e303030303022"
+label = "Shake 0.10000 -> 0.00000"
+
+[[patch.change]]
+offset = 775
+original = "5f7368616b655261646975733d22302e303122"
+patched = "5f7368616b655261646975733d22302e303022"
+label = "Shake 0.01 -> 0.00"
+
+[[patch.change]]
+offset = 1042
+original = "5f7368616b655261646975733d22302e303322"
+patched = "5f7368616b655261646975733d22302e303022"
+label = "Shake 0.03 -> 0.00"
+
+[[patch.change]]
+offset = 1311
+original = "5f7368616b655261646975733d22302e303522"
+patched = "5f7368616b655261646975733d22302e303022"
+label = "Shake 0.05 -> 0.00"
+
+[[patch.change]]
+offset = 1577
+original = "5f7368616b655261646975733d22302e313822"
+patched = "5f7368616b655261646975733d22302e303022"
+label = "Shake 0.18 -> 0.00"
+
+[[patch.change]]
+offset = 1893
+original = "5f7368616b655261646975733d22302e303622"
+patched = "5f7368616b655261646975733d22302e303022"
+label = "Shake 0.06 -> 0.00"
+
+[[patch.change]]
+offset = 2169
+original = "5f7368616b655261646975733d22302e3122"
+patched = "5f7368616b655261646975733d22302e3022"
+label = "Shake 0.1 -> 0.0"
+
+[[patch.change]]
+offset = 2441
+original = "5f7368616b655261646975733d22302e3222"
+patched = "5f7368616b655261646975733d22302e3022"
+label = "Shake 0.2 -> 0.0"
+
+[[patch.change]]
+offset = 2750
+original = "5f7368616b655261646975733d22302e30343522"
+patched = "5f7368616b655261646975733d22302e30303022"
+label = "Shake 0.045 -> 0.000"
+
+[[patch.change]]
+offset = 3020
+original = "5f7368616b655261646975733d22302e3122"
+patched = "5f7368616b655261646975733d22302e3022"
+label = "Shake 0.1 -> 0.0"
+
+[[patch.change]]
+offset = 3287
+original = "5f7368616b655261646975733d22302e313222"
+patched = "5f7368616b655261646975733d22302e303022"
+label = "Shake 0.12 -> 0.00"
+
+[[patch.change]]
+offset = 3593
+original = "5f7368616b655261646975733d22302e303422"
+patched = "5f7368616b655261646975733d22302e303022"
+label = "Shake 0.04 -> 0.00"
+
+[[patch.change]]
+offset = 3863
+original = "5f7368616b655261646975733d22302e303122"
+patched = "5f7368616b655261646975733d22302e303022"
+label = "Shake 0.01 -> 0.00"
+
+[[patch.change]]
+offset = 4132
+original = "5f7368616b655261646975733d22302e303122"
+patched = "5f7368616b655261646975733d22302e303022"
+label = "Shake 0.01 -> 0.00"
+
+[[patch.change]]
+offset = 45632
+original = "5f7368616b655261646975733d22302e30313522"
+patched = "5f7368616b655261646975733d22302e30303022"
+label = "Shake 0.015 -> 0.000"
+
+[[patch.change]]
+offset = 45867
+original = "5f7368616b655261646975733d22302e303422"
+patched = "5f7368616b655261646975733d22302e303022"
+label = "Shake 0.04 -> 0.00"
+
+[[patch.change]]
+offset = 46100
+original = "5f7368616b655261646975733d22302e3122"
+patched = "5f7368616b655261646975733d22302e3022"
+label = "Shake 0.1 -> 0.0"
+
+[[patch.change]]
+offset = 46332
+original = "5f7368616b655261646975733d22302e313522"
+patched = "5f7368616b655261646975733d22302e303022"
+label = "Shake 0.15 -> 0.00"
+
+[[patch.change]]
+offset = 46565
+original = "5f7368616b655261646975733d22302e323522"
+patched = "5f7368616b655261646975733d22302e303022"
+label = "Shake 0.25 -> 0.00"
+
+[[patch.change]]
+offset = 46808
+original = "5f7368616b655261646975733d22302e343522"
+patched = "5f7368616b655261646975733d22302e303022"
+label = "Shake 0.45 -> 0.00"
+
+[[patch.change]]
+offset = 47046
+original = "5f7368616b655261646975733d22302e303122"
+patched = "5f7368616b655261646975733d22302e303022"
+label = "Shake 0.01 -> 0.00"
+
+[[patch.change]]
+offset = 47284
+original = "5f7368616b655261646975733d22302e303222"
+patched = "5f7368616b655261646975733d22302e303022"
+label = "Shake 0.02 -> 0.00"
+
+[[patch.change]]
+offset = 47522
+original = "5f7368616b655261646975733d22302e303322"
+patched = "5f7368616b655261646975733d22302e303022"
+label = "Shake 0.03 -> 0.00"
+
+[[patch.change]]
+offset = 47760
+original = "5f7368616b655261646975733d22302e303522"
+patched = "5f7368616b655261646975733d22302e303022"
+label = "Shake 0.05 -> 0.00"
+
+[[patch.change]]
+offset = 47998
+original = "5f7368616b655261646975733d22302e303522"
+patched = "5f7368616b655261646975733d22302e303022"
+label = "Shake 0.05 -> 0.00"

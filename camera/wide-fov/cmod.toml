@@ -1,0 +1,74 @@
+# Wide FOV — Increases base camera field of view
+# Choose between 55, 70, or 90 degree FOV for each camera mode.
+# All values verified against game version 1.02.00.
+
+[mod]
+name = "wide-fov"
+version = "1.0.0"
+title = "Wide FOV"
+description = "Widens the default camera FOV from 40 degrees. Choose 55 (subtle), 70 (wide), or 90 (ultra-wide) for exploration, combat, horse, indoor, and climbing cameras."
+authors = ["CrimsonForge"]
+license = "MIT"
+
+[target]
+game = "crimson-desert"
+game_version = "1.02.00"
+
+[[patch]]
+file = "actionchart/playercamerapreset.xml"
+checksum = "f3d2c1de2d1b4e1d4c61261a7c3d17c54e013c7e5bd7e5da23ae9f491ab3d81f"
+
+# Default exploration camera
+[[patch.change]]
+offset = 1013
+original = "466f763d22343022"
+label = "Exploration FOV"
+
+[patch.change.variants]
+"55 (subtle)" = "466f763d22353522"
+"70 (wide)" = "466f763d22373022"
+"90 (ultra-wide)" = "466f763d22393022"
+
+# Indoor weapon camera
+[[patch.change]]
+offset = 11688
+original = "466f763d22343022"
+label = "Indoor FOV"
+
+[patch.change.variants]
+"55 (subtle)" = "466f763d22353522"
+"70 (wide)" = "466f763d22373022"
+"90 (ultra-wide)" = "466f763d22393022"
+
+# Combat camera
+[[patch.change]]
+offset = 15612
+original = "466f763d22343022"
+label = "Combat FOV"
+
+[patch.change.variants]
+"55 (subtle)" = "466f763d22353522"
+"70 (wide)" = "466f763d22373022"
+"90 (ultra-wide)" = "466f763d22393022"
+
+# Horse riding camera
+[[patch.change]]
+offset = 72471
+original = "466f763d22343022"
+label = "Horse FOV"
+
+[patch.change.variants]
+"55 (subtle)" = "466f763d22353522"
+"70 (wide)" = "466f763d22373022"
+"90 (ultra-wide)" = "466f763d22393022"
+
+# Climbing camera
+[[patch.change]]
+offset = 87736
+original = "466f763d22343022"
+label = "Climbing FOV"
+
+[patch.change.variants]
+"55 (subtle)" = "466f763d22353522"
+"70 (wide)" = "466f763d22373022"
+"90 (ultra-wide)" = "466f763d22393022"
