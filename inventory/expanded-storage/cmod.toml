@@ -1,0 +1,39 @@
+# Expanded Storage — Increases inventory and warehouse capacity
+# Modifies the binary inventory configuration (inventory.pabgb).
+#
+# This is a first-party CrimsonForge mod demonstrating .pabgb binary patching.
+# The inventory.pabgb uses u16 LE pairs for (start_slots, max_slots).
+#
+# Record layout:
+#   Character inventory @ offset 367: u16 start_slots, u16 max_slots
+#   Default: start=50 (0x0032), max=240 (0x00F0)
+
+[mod]
+name = "expanded-storage"
+version = "1.1.0"
+title = "Expanded Storage"
+description = "Instantly expands character inventory to 500/730/999 slots. Changes both starting and max capacity so the effect is immediate."
+authors = ["CrimsonForge"]
+license = "MIT"
+
+[target]
+game = "crimson-desert"
+game_version = "1.02.00"
+
+[[patch]]
+file = "gamedata/inventory.pabgb"
+checksum = "11b328d337b46d3df3a259bcf45a26c2ed9da88aadbfa7aa2a56228e59245b16"
+
+# Character inventory: change both start AND max slots
+# Offset 367: u16 start_slots (default 50 = 0x0032)
+# Offset 369: u16 max_slots (default 240 = 0x00F0)
+# We patch all 4 bytes at once so both change together.
+[[patch.change]]
+offset = 367
+original = "3200f000"
+label = "Character inventory slots"
+
+[patch.change.variants]
+"500 slots" = "f401f401"
+"730 slots" = "da02da02"
+"999 slots" = "e703e703"
