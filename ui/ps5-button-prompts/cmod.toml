@@ -1,0 +1,404 @@
+# PS5 Button Prompts — Forces PlayStation button icons
+# Swaps Xbox texture IDs (_XB_) to PlayStation (_PS_) in the UI CSS.
+# Same-length byte patch: _XB_ and _PS_ are both 4 bytes.
+#
+# The game natively supports PS5 button prompts but Steam Input reports
+# DualSense controllers as Xbox, forcing Xbox icons. This patches the
+# CSS texture references so Xbox-mode renders PlayStation icons.
+
+[mod]
+name = "ps5-button-prompts"
+version = "2.0.0"
+title = "PS5 Button Prompts"
+description = "Forces PlayStation 5 (DualSense) button prompt icons. Patches CSS texture references from Xbox to PlayStation."
+authors = ["CrimsonForge"]
+license = "MIT"
+
+[target]
+game = "crimson-desert"
+game_version = "1.02.00"
+
+# Main UI button prompts
+[[patch]]
+file = "ui/xml/gamemain/template/cdcommon.css"
+checksum = "29e9f734b2a349315e663397dfa4c8823664aa2e97bb9d48e6b2dbce39204fc8"
+
+[[patch.change]]
+offset = 19363
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 19498
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 19639
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 19774
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 19909
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 20042
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 20180
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 20332
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 20492
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 20632
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 20789
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 20936
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 21096
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 21251
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 21399
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 21549
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 21699
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 21840
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 21978
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 22118
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 22258
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 22403
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 22540
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 22677
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 22814
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 22952
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 23412
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 23570
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 23725
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 24188
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 24347
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 24500
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 24643
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 25530
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 25671
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 27917
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 28385
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 28546
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 28704
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 29176
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 29338
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 29494
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 29640
+original = "5f58425f"
+patched = "5f50535f"
+
+# QTE button prompts
+[[patch]]
+file = "ui/xml/gamemain/play/qtecommon.css"
+checksum = "0458f14b6f79b3f6117937f4a7043a01d610e785cc6cc175df2be7774e361e81"
+
+[[patch.change]]
+offset = 23553
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 23680
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 23807
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 23934
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 24061
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 24195
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 24325
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 24473
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 24919
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 25054
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 25185
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 25334
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 25814
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 25936
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 26058
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 26180
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 26303
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 26427
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 26551
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 26675
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 26799
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 26927
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 27053
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 27180
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 27307
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 27442
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 27569
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 27714
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 28152
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 28284
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 28412
+original = "5f58425f"
+patched = "5f50535f"
+
+[[patch.change]]
+offset = 28558
+original = "5f58425f"
+patched = "5f50535f"
